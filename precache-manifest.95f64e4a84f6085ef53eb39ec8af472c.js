@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "30d046104d3658f65f00dfefef0322fa",
+    "revision": "54e61894defb5e15617b2c78b61d51d9",
     "url": "/JogoMemoriaReact/index.html"
   },
   {
-    "revision": "ca70fe89a7c78e28b545",
+    "revision": "64eb0c251962206da845",
     "url": "/JogoMemoriaReact/static/css/main.e9eb53d1.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/JogoMemoriaReact/static/js/2.23327e4a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ca70fe89a7c78e28b545",
-    "url": "/JogoMemoriaReact/static/js/main.30be6d21.chunk.js"
+    "revision": "64eb0c251962206da845",
+    "url": "/JogoMemoriaReact/static/js/main.d03f76ff.chunk.js"
   },
   {
     "revision": "bd245f9fa32265bc7fd0",

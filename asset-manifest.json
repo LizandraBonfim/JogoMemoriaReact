@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/JogoMemoriaReact/static/css/main.e9eb53d1.chunk.css",
-    "main.js": "/JogoMemoriaReact/static/js/main.30be6d21.chunk.js",
-    "main.js.map": "/JogoMemoriaReact/static/js/main.30be6d21.chunk.js.map",
+    "main.js": "/JogoMemoriaReact/static/js/main.d03f76ff.chunk.js",
+    "main.js.map": "/JogoMemoriaReact/static/js/main.d03f76ff.chunk.js.map",
     "runtime-main.js": "/JogoMemoriaReact/static/js/runtime-main.6a1232da.js",
     "runtime-main.js.map": "/JogoMemoriaReact/static/js/runtime-main.6a1232da.js.map",
     "static/js/2.23327e4a.chunk.js": "/JogoMemoriaReact/static/js/2.23327e4a.chunk.js",
     "static/js/2.23327e4a.chunk.js.map": "/JogoMemoriaReact/static/js/2.23327e4a.chunk.js.map",
     "index.html": "/JogoMemoriaReact/index.html",
-    "precache-manifest.6b432dadc9a61cc81b71964bec9880aa.js": "/JogoMemoriaReact/precache-manifest.6b432dadc9a61cc81b71964bec9880aa.js",
+    "precache-manifest.95f64e4a84f6085ef53eb39ec8af472c.js": "/JogoMemoriaReact/precache-manifest.95f64e4a84f6085ef53eb39ec8af472c.js",
     "service-worker.js": "/JogoMemoriaReact/service-worker.js",
     "static/css/main.e9eb53d1.chunk.css.map": "/JogoMemoriaReact/static/css/main.e9eb53d1.chunk.css.map",
     "static/js/2.23327e4a.chunk.js.LICENSE.txt": "/JogoMemoriaReact/static/js/2.23327e4a.chunk.js.LICENSE.txt",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.6a1232da.js",
     "static/js/2.23327e4a.chunk.js",
     "static/css/main.e9eb53d1.chunk.css",
-    "static/js/main.30be6d21.chunk.js"
+    "static/js/main.d03f76ff.chunk.js"
   ]
 }
