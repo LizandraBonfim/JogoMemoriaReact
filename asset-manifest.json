@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/JogoMemoriaReact/static/css/main.ef8576be.chunk.css",
-    "main.js": "/JogoMemoriaReact/static/js/main.2aeeed46.chunk.js",
-    "main.js.map": "/JogoMemoriaReact/static/js/main.2aeeed46.chunk.js.map",
+    "main.css": "/JogoMemoriaReact/static/css/main.e9eb53d1.chunk.css",
+    "main.js": "/JogoMemoriaReact/static/js/main.30be6d21.chunk.js",
+    "main.js.map": "/JogoMemoriaReact/static/js/main.30be6d21.chunk.js.map",
     "runtime-main.js": "/JogoMemoriaReact/static/js/runtime-main.6a1232da.js",
     "runtime-main.js.map": "/JogoMemoriaReact/static/js/runtime-main.6a1232da.js.map",
     "static/js/2.23327e4a.chunk.js": "/JogoMemoriaReact/static/js/2.23327e4a.chunk.js",
     "static/js/2.23327e4a.chunk.js.map": "/JogoMemoriaReact/static/js/2.23327e4a.chunk.js.map",
     "index.html": "/JogoMemoriaReact/index.html",
-    "precache-manifest.c5ae69ddce769eb6f41dc02e73d3c604.js": "/JogoMemoriaReact/precache-manifest.c5ae69ddce769eb6f41dc02e73d3c604.js",
+    "precache-manifest.6b432dadc9a61cc81b71964bec9880aa.js": "/JogoMemoriaReact/precache-manifest.6b432dadc9a61cc81b71964bec9880aa.js",
     "service-worker.js": "/JogoMemoriaReact/service-worker.js",
-    "static/css/main.ef8576be.chunk.css.map": "/JogoMemoriaReact/static/css/main.ef8576be.chunk.css.map",
+    "static/css/main.e9eb53d1.chunk.css.map": "/JogoMemoriaReact/static/css/main.e9eb53d1.chunk.css.map",
     "static/js/2.23327e4a.chunk.js.LICENSE.txt": "/JogoMemoriaReact/static/js/2.23327e4a.chunk.js.LICENSE.txt",
     "static/media/anna.jpg": "/JogoMemoriaReact/static/media/anna.7b02d200.jpg",
     "static/media/elsa.jpg": "/JogoMemoriaReact/static/media/elsa.75c5437c.jpg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.6a1232da.js",
     "static/js/2.23327e4a.chunk.js",
-    "static/css/main.ef8576be.chunk.css",
-    "static/js/main.2aeeed46.chunk.js"
+    "static/css/main.e9eb53d1.chunk.css",
+    "static/js/main.30be6d21.chunk.js"
   ]
 }
