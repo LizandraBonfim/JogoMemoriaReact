@@ -13,46 +13,6 @@ import './style.css';
 function Jogo() {
 
 
-
-    // const itens = [
-    //     {
-    //         id: 1,
-    //         name: 'anna',
-    //         image: anna,
-    //         isFlip: false,
-    //         revert: function () {
-    //             this.isFlip = !this.isFlip;
-    //         }
-    //     },
-    //     {
-    //         id: 2,
-    //         name: 'elsa',
-    //         image: elsa,
-    //         isFlip: false,
-    //         revert: function () {
-    //             this.isFlip = !this.isFlip;
-    //         }
-    //     },
-    //     {
-    //         id: 3,
-    //         name: 'anna',
-    //         image: anna,
-    //         isFlip: false,
-    //         revert: function () {
-    //             this.isFlip = !this.isFlip;
-    //         }
-    //     },
-    //     {
-    //         id: 4,
-    //         name: 'elsa',
-    //         image: elsa,
-    //         isFlip: false,
-    //         revert: function () {
-    //             this.isFlip = !this.isFlip;
-    //         }
-    //     },
-    // ];
-
     const itens = [
         {
             id: 1,
@@ -150,23 +110,19 @@ function Jogo() {
     const [hasFlipedCard, setHasFlipedCard] = useState(false);
     const [firstCard, setFirstCard] = useState(null);
     const [secondCard, setSecondCard] = useState(null);
-    const [liz, setLiz] = useState(itens);
+    const [firstCardID, setFirstCardID] = useState(null);
+    const [secondCardID, setSecondCardID] = useState(null);
+    const [liz,] = useState(itens);
     const [block, setBlock] = useState(false);
 
 
     useEffect(() => {
 
-        console.log('firrrst', firstCard);
-        console.log('secooond', secondCard);
 
-        if (!firstCard || !secondCard) {
-            console.log('!firstCard || !secondCard)', !firstCard || !secondCard)
 
-            return;
-        }
+        if (!firstCard || !secondCard) return;
 
         if (firstCard === secondCard) {
-            console.log('firstCard === secondCard', firstCard === secondCard)
 
             liz.find(x => x.name === firstCard).isFlip = true;
             liz.find(x => x.name === secondCard).isFlip = true;
@@ -174,74 +130,59 @@ function Jogo() {
 
             setTimeout((x) => {
 
-                console.log('verdadeiro');
 
                 disableCards();
 
-            }, 1500)
+            }, 1000)
 
             return;
         }
 
-        console.log('liz.find(x => x.name === firstCard).isFlip', liz.find(x => x.name === firstCard).isFlip)
-
-        console.log('liz.find(x => x.name === secondCard).isFlip', liz.find(x => x.name === secondCard).isFlip)
-
-        console.log('liz.find(x => x.name === firstCard || secondCard).isFlip', liz.find(x => x.name === firstCard || secondCard).isFlip)
-
-        liz.find(x => x.name === firstCard).isFlip = false;
-        liz.find(x => x.name === secondCard).isFlip = false;
-        // liz.find(x => x.name === firstCard && secondCard).isFlip = false;
 
         setTimeout(() => {
+            liz.find(x => x.id === firstCardID).isFlip = false;
+            liz.find(x => x.id === secondCardID).isFlip = false;
 
             setFirstCard(null);
             setSecondCard(null);
+            setFirstCardID(null);
+            setSecondCardID(null);
             setBlock(false);
 
             return
 
-            // liz.find(item => item.name === secondCard).revert()
-        }, 1500);
+        }, 500);
 
     }, [firstCard, secondCard])
 
     function handleClick(dataCard, id) {
-        console.log('id', id);
         if (block) return;
 
         liz.find(x => x.id === id).isFlip = true;
 
         if (!hasFlipedCard) {
             setHasFlipedCard(true);
-            console.log('card', dataCard);
-
-
-
             setFirstCard(dataCard);
-            console.log('first', firstCard)
+            setFirstCardID(id);
             return;
         }
-        console.log(dataCard)
         setSecondCard(dataCard);
+        setSecondCardID(id);
         setHasFlipedCard(false);
 
 
 
-
     }
-
 
 
     function disableCards() {
         setFirstCard(null);
-        setBlock(false);
         setSecondCard(null);
+        setFirstCardID(null);
+        setSecondCardID(null);
+        setBlock(false);
 
     }
-
-
-
 
 
     return (
@@ -252,20 +193,6 @@ function Jogo() {
                 ))
 
             }
-
-            {/* <Card src={anna} dataCard="anna" funcao={handleClick} />
-            <Card src={elsa} dataCard="elsa" funcao={handleClick} />
-            <Card src={frozen} dataCard="frozen" funcao={handleClick} />
-            <Card src={olaf} dataCard="olaf" funcao={handleClick} />
-            <Card src={irmas} dataCard="irmas" funcao={handleClick} />
-            <Card src={todos} dataCard="todos" funcao={handleClick} />
-
-            <Card src={anna} dataCard="anna" funcao={handleClick} />
-            <Card src={elsa} dataCard="elsa" funcao={handleClick} />
-            <Card src={frozen} dataCard="frozen" funcao={handleClick} />
-            <Card src={olaf} dataCard="olaf" funcao={handleClick} />
-            <Card src={irmas} dataCard="irmas" funcao={handleClick} />
-            <Card src={todos} dataCard="todos" funcao={handleClick} /> */}
 
         </div>
     )
